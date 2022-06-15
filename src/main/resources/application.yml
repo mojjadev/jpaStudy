@@ -25,13 +25,20 @@ spring:
       max-lifetime: 25000
       connection-timeout: 30000
 
+#ddl-auto
+  #create : 기존테이블 삭제 후 다시 생성
+  #update : 변경분만 반영
+  #none : 사용하지 않음
+# hibernate.show_sql=true 쿼리를 보여줌 로깅과 같이 쓸 경우 이중으로 노출
   jpa:
     hibernate:
       ddl-auto: create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
-    show-sql: true
+    show-sql: false
+    #spring.jpa.generate-ddl=true 옵션을 true로 설정하면 해당 데이터를 근거로 서버 시작 시점에 DDL문을 생성하여 DB에 적용한다.
     generate-ddl: true
+    # sql 이쁘게 정렬해서
     properties:
       hibernate:
         format_sql: true
