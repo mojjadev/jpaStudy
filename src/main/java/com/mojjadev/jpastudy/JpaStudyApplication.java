@@ -1,12 +1,7 @@
 package com.mojjadev.jpastudy;
 
-import com.mojjadev.jpastudy.domain.Member;
-import com.mojjadev.jpastudy.domain.MemberRepository;
-import com.mojjadev.jpastudy.domain.ORDERTYPE;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class JpaStudyApplication {

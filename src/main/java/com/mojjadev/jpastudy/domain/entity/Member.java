@@ -1,4 +1,4 @@
-package com.mojjadev.jpastudy.domain;
+package com.mojjadev.jpastudy.domain.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
