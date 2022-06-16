@@ -48,5 +48,9 @@ logging:
   pattern:
     console: "%d %-5level %logger : %msg%n"
   level:
-    org.springframework: info
-    org.hibernate: debug
+    org:
+      springframework: info
+      hibernate:
+        type:
+          descriptor:
+            sql: trace  #hibernate이 보여주는 로그에 있는 ?에 어떤값이 들어갔는지 구체적으로 알고 싶을 때 사용하는 옵션
